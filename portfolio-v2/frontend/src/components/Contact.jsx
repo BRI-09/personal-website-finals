@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import { submitContact } from '../api';
 import styles from './Contact.module.css';
 
-const INIT = { name: '', email: '', message: '' };
+const INIT = {
+  name: '',
+  email: '',
+  message: '',
+};
 
 export default function Contact() {
   const [form, setForm] = useState(INIT);
@@ -10,7 +14,10 @@ export default function Contact() {
   const [msg, setMsg] = useState(null);
 
   const onChange = (e) =>
-    setForm((p) => ({ ...p, [e.target.name]: e.target.value }));
+    setForm((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -40,40 +47,48 @@ export default function Contact() {
               lineHeight: 1.7,
             }}
           >
-            Got a project, a question, want to play together in COD, or just
-            want to say hi? Drop me a message. I read all messages personally.
+            Have a project, internship opportunity, question, or simply want to
+            connect? Feel free to send me a message. I personally read and
+            respond to all inquiries.
           </p>
 
           <div className={styles.detail}>
+            <strong>Email:</strong>{' '}
             <a href="mailto:bpananayo@student.apc.edu.ph">
               bpananayo@student.apc.edu.ph
             </a>
           </div>
 
           <div className={styles.detail}>
-            <span>Asia Pacific College, Philippines</span>
+            <strong>School:</strong> Asia Pacific College, Philippines
           </div>
 
           <div className={styles.detail}>
-            <span>Discord: 6976169537657896961</span>
+            <strong>GitHub:</strong>{' '}
+            <a
+              href="https://github.com/YOUR_GITHUB_USERNAME"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github.com/YOUR_GITHUB_USERNAME
+            </a>
           </div>
 
           <div className={styles.detail}>
-            <span>
-              AI-assisted development and content structuring (
-              <a
-                href="https://claude.ai/share/4e674dc3-a39b-4ad5-b9de-df84c6670c5f"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Reference
-              </a>
-              )
-            </span>
+            <strong>LinkedIn:</strong>{' '}
+            <a
+              href="https://www.linkedin.com/in/YOUR_LINKEDIN_PROFILE"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              linkedin.com/in/YOUR_LINKEDIN_PROFILE
+            </a>
           </div>
-        </div>
 
-        <form className={styles.form} onSubmit={onSubmit} noValidate>
+          <div orm}
+          onSubmit={onSubmit}
+          noValidate
+        >
           <div className="field">
             <label>Name</label>
             <input
