@@ -1,17 +1,23 @@
 import React from 'react';
 
 const education = [
-  { level: 'Elementary', school: 'Lagawe Central School' },
-  { level: 'High School', school: 'Don Bosco (Lagawe, Ifugao)' },
-  { level: 'Senior High', school: 'NVGCHS' },
-  { level: 'College (Current)', school: 'Asia Pacific College' },
+  {
+    level: 'Bachelor of Science in Computer Science',
+    school: 'Asia Pacific College',
+    details: 'Specialization in Cybersecurity and Digital Forensics',
+  },
+  {
+    level: 'Expected Graduation',
+    school: '2027-2028',
+  },
 ];
 
 const hobbies = [
   { l: 'Cooking & Baking' },
-  { l: 'Eating' },
-  { l: 'Sleeping' },
-  { l: 'Mobile Games' },
+  { l: 'Mobile Gaming' },
+  { l: 'Exploring New Technologies' },
+  { l: 'Spending Time with Pets' },
+  { l: 'Crocheting' },
 ];
 
 export default function About() {
@@ -37,10 +43,10 @@ export default function About() {
             <div className="bullet">
               <span className="dot" />
               <div>
-                My goal is to build a successful career in technology while
-                creating projects that make a positive impact, including
-                solutions that can help improve the welfare and adoption of
-                stray cats and dogs.
+                My goal is to build a successful career in technology while creating
+                meaningful solutions that make a positive impact. In the future, I aspire
+                to develop IoT and software projects that help people solve everyday
+                problems, improve accessibility, and contribute to the welfare of animals.
               </div>
             </div>
           </div>
