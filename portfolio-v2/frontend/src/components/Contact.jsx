@@ -102,7 +102,10 @@ export default function Contact() {
             <input
               name="email"
               type="email"
-                 required
+              placeholder="you@example.com"
+              value={form.email}
+              onChange={onChange}
+              required
               disabled={busy}
             />
           </div>
