@@ -47,7 +47,7 @@ export default function Contact() {
               lineHeight: 1.7,
             }}
           >
-            Have a project, internship opportunity, question, or simply want to
+            Have a project, question, or simply want to
             connect? Feel free to send me a message. I personally read and
             respond to all inquiries.
           </p>
@@ -66,7 +66,7 @@ export default function Contact() {
           <div className={styles.detail}>
             <strong>GitHub:</strong>{' '}
             <a
-              href="https://github.com/YOUR_GITHUB_USERNAME"
+              href="https://github.com/BRI-09"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -77,7 +77,7 @@ export default function Contact() {
           <div className={styles.detail}>
             <strong>LinkedIn:</strong>{' '}
             <a
-              href="https://www.linkedin.com/in/YOUR_LINKEDIN_PROFILE"
+              href="www.linkedin.com/in/breneth-ananayo-159516322"
               target="_blank"
               rel="noopener noreferrer"
             >
