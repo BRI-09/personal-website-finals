@@ -43,7 +43,7 @@ export default function Contact() {
               lineHeight: 1.7,
             }}
           >
-            Have a project, internship opportunity, question, or simply want
+            Have a project, internship opportunity for me, question, or simply want
             to connect? Feel free to send me a message. I personally read and
             respond to all inquiries.
           </p>
