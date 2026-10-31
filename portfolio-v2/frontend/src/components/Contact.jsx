@@ -119,7 +119,7 @@ export default function Contact() {
               value={form.message}
               onChange={onChange}
               required
-              minLength={10}
+              minLength={2}
               disabled={busy}
             />
           </div>
