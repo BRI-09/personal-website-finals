@@ -2,11 +2,7 @@ import React, { useState } from 'react';
 import { submitContact } from '../api';
 import styles from './Contact.module.css';
 
-const INIT = {
-  name: '',
-  email: '',
-  message: '',
-};
+const INIT = { name: '', email: '', message: '' };
 
 export default function Contact() {
   const [form, setForm] = useState(INIT);
@@ -14,8 +10,8 @@ export default function Contact() {
   const [msg, setMsg] = useState(null);
 
   const onChange = (e) =>
-    setForm((prev) => ({
-      ...prev,
+    setForm((p) => ({
+      ...p,
       [e.target.name]: e.target.value,
     }));
 
@@ -47,8 +43,8 @@ export default function Contact() {
               lineHeight: 1.7,
             }}
           >
-            Have a project, question, or simply want to
-            connect? Feel free to send me a message. I personally read and
+            Have a project, internship opportunity, question, or simply want
+            to connect? Feel free to send me a message. I personally read and
             respond to all inquiries.
           </p>
 
@@ -70,25 +66,23 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              github.com/YOUR_GITHUB_USERNAME
+              github.com/BRI-09
             </a>
           </div>
 
           <div className={styles.detail}>
             <strong>LinkedIn:</strong>{' '}
             <a
-              href="www.linkedin.com/in/breneth-ananayo-159516322"
+              href="https://www.linkedin.com/in/breneth-ananayo-159516322"
               target="_blank"
               rel="noopener noreferrer"
             >
-              linkedin.com/in/YOUR_LINKEDIN_PROFILE
+              linkedin.com/in/breneth-ananayo-159516322
             </a>
           </div>
+        </div>
 
-          <div orm}
-          onSubmit={onSubmit}
-          noValidate
-        >
+        <form className={styles.form} onSubmit={onSubmit} noValidate>
           <div className="field">
             <label>Name</label>
             <input
@@ -108,10 +102,7 @@ export default function Contact() {
             <input
               name="email"
               type="email"
-              placeholder="you@example.com"
-              value={form.email}
-              onChange={onChange}
-              required
+                 required
               disabled={busy}
             />
           </div>
